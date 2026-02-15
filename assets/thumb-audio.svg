@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="160" viewBox="0 0 240 160">
+  <rect width="240" height="160" fill="#1a1b22" stroke="#2a2b33"/>
+  <polygon points="110,82 84,66 84,98" fill="#d7b56d" opacity=".8"/>
+  <text x="50%" y="78%" dominant-baseline="middle" text-anchor="middle" fill="#b9bbc2" font-family="Arial, sans-serif" font-size="14">Áudio &amp; Vídeo</text>
+</svg>

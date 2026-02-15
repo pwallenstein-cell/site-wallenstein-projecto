@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Carlos Wallenstein — Centenário (1926–2026)</title>
+  <meta name="description" content="Proposta de website do centenário de Carlos Wallenstein: biografia, obra literária, arquivo multimédia e programa."/>
+  <meta name="author" content="Comissão do Centenário de Carlos Wallenstein"/>
+
+  <meta property="og:title" content="Carlos Wallenstein — Centenário (1926–2026)"/>
+  <meta property="og:description" content="Arquivo digital: vida, obra e legado de Carlos Wallenstein."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="assets/hero-wallenstein.svg"/>
+  <meta property="og:locale" content="pt_PT"/>
+
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header__wrap">
+      <a class="brand" href="index.html" aria-label="Página inicial — Carlos Wallenstein">
+        <span class="brand__logo" aria-hidden="true">CW</span>
+        <span class="brand__name">Carlos Wallenstein</span>
+        <span class="brand__years">Centenário 1926–2026</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Navegação principal">
+        <button class="site-nav__toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+        <ul id="menu" class="site-nav__list">
+          <li><a href="biografia.html">Biografia</a></li>
+          <li><a href="obra.html">Obra Literária</a></li>
+          <li><a href="arquivo.html">Arquivo Multimédia</a></li>
+          <li><a href="#centenario">Centenário 2026</a></li>
+          <li><a href="#contribua">Contribua</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" role="region" aria-label="Destaque" id="inicio">
+    <div class="container hero__content">
+      <h1 class="hero__title">Carlos Wallenstein — centenário (1926–2026)</h1>
+      <p class="hero__subtitle"><b>Figura central do teatro, da literatura e da política cultural portuguesa do século XX</b></p>
+
+      <div class="hero__cta">
+        <a class="btn" href="biografia.html">Biografia</a>
+        <a class="btn btn--ghost" href="arquivo.html">Arquivo Multimédia</a>
+      </div>
+    </div>
+  </section>
+
+  <main id="conteudo">
+    <section class="section section--intro">
+      <div class="container grid grid--2col">
+        <div>
+          <h2>Proposta de website</h2>
+          <p class="lead">Versão de demonstração para partilha com a família e recolha de contributos.</p>
+          <p>O objetivo é consolidar conteúdos (textos, imagens, documentos e registos) e, após validação, passar o projeto a um web designer.</p>
+        </div>
+
+        <aside>
+          <figure class="figure">
+            <img src="assets/hero-wallenstein.svg" alt="Imagem (placeholder)"/>
+          </figure>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--accent" id="centenario">
+      <div class="container">
+        <h2>Comemorações do Centenário (2026)</h2>
+        <p class="lead">Exposições, conferências, leituras encenadas, publicações e outras iniciativas ao longo de 2026.</p>
+
+        <div class="timeline">
+          <article class="timeline__item">
+            <time class="timeline__date" datetime="2026-01">Jan 2026</time>
+            <div class="timeline__content">
+              <h3>Início oficial</h3>
+              <p>Lançamento do website e apresentação do programa anual.</p>
+            </div>
+          </article>
+
+          <article class="timeline__item">
+            <time class="timeline__date" datetime="2026-03">Mar 2026</time>
+            <div class="timeline__content">
+              <h3>Exposição documental</h3>
+              <p>Seleção de manuscritos, fotografias e programas históricos.</p>
+            </div>
+          </article>
+
+          <article class="timeline__item">
+            <time class="timeline__date" datetime="2026-10">Out 2026</time>
+            <div class="timeline__content">
+              <h3>Leituras encenadas</h3>
+              <p>Textos inéditos e versões traduzidas por Carlos Wallenstein.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contribua">
+      <div class="container grid grid--2col">
+        <div>
+          <h2>Contribua para o Arquivo</h2>
+          <p class="lead">Fotografias, documentos, cartas, manuscritos, áudio, vídeo, programas e recortes (com ano, local, autoria e direitos).</p>
+          <p><a class="btn btn--outline" href="arquivo.html#contribua-form">Enviar contribuição</a></p>
+        </div>
+
+        <aside>
+          <div class="notice">
+            <strong>Nota:</strong> Nesta fase, privilegiamos referências por link a fontes institucionais e conteúdos próprios com autorização.
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer__wrap">
+      <div class="footer__brand">
+        <span class="brand__logo brand__logo--small" aria-hidden="true">CW</span>
+        <span class="brand__name">Centenário de Carlos Wallenstein</span>
+      </div>
+
+      <nav class="footer__nav" aria-label="Rodapé">
+        <a href="sobre.html">Sobre</a>
+        <a href="creditos.html">Créditos</a>
+        <a href="direitos.html">Direitos</a>
+        <a href="contactos.html">Contactos</a>
+      </nav>
+
+      <p class="muted">© 2026 — Comissão do Centenário.</p>
+    </div>
+  </footer>
+
+  <script>
+  (function(){
+    const btn=document.querySelector('.site-nav__toggle');
+    const menu=document.getElementById('menu');
+    if(!btn||!menu) return;
+    btn.addEventListener('click',()=>{
+      const expanded=btn.getAttribute('aria-expanded')==='true';
+      btn.setAttribute('aria-expanded',String(!expanded));
+      menu.classList.toggle('is-open');
+    });
+  })();
+  </script>
+</body>
+</html>
